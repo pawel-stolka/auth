@@ -160,8 +160,7 @@ function sender(mailData) {
             ${serverAddress}/users      
         ` */
         `
-            ${frontUrl}/#/activate/
-            ${mailData.temporaryToken}
+            ${frontUrl}/#/activate/${mailData.temporaryToken}
         `
 
     let emailContent = `
