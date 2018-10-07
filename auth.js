@@ -111,8 +111,8 @@ router.post('/activate/:token', async (req, res) => {
     let checking = jwt.encode(token, CONS.consts.secretString)
     console.log('checking 4 token: ', checking, token)
 
-    user.temporaryToken = false;
-    user.confirmed = true;
+    user.temporaryToken = false; 
+    user.verified = true;
     user.save((err, newLog) => {
         console.log('success - activated.')
     })
