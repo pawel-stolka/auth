@@ -6,15 +6,15 @@ var userSchema = new mongoose.Schema({
     email: String,
     pass: String,
     plainPass: String,
-    admin: {
-        type: Boolean,
-        default: false
-    },
+    // admin: {
+    //     type: Boolean,
+    //     default: false
+    // },
     createdAt: {
         type: Date,
         default: Date.now
     },
-    confirmed: {
+    verified: {
         type: Boolean,
         default: false
     },
