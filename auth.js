@@ -154,7 +154,7 @@ function sender(mailData) {
     });
     
     let receivers = [mailData.email, source],
-        activationLink = `${frontUrl}/#/activate/${mailData.temporaryToken}`
+        activationLink = `${frontUrl}/activate/${mailData.temporaryToken}`
         // 'https://authtemplate.herokuapp.com/users'
         /* `
             ${serverAddress}/users      
